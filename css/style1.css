@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/quiz.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+.quiz-container{
+    background-color:#3f4964;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+    width: 600px;
+    height: 400px;
+
+    overflow: hidden;
+    position: relative;
+
+}
+.quiz-container .quiz-header{
+    padding:1rem 2rem;
+    display: flex;
+    position: relative;
+
+}
+.quiz-header #question{
+    width:280px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ h2{
+    text-align: center;
+    margin:0;
+    padding:1rem;
+}
+.quiz-header input[type="radio"]{
+   opacity: 0;
+   left:0;
+   background: transparent;
+}
+
+.quiz-header ul{
+    list-style-type: upper-alpha;
+    padding-left:50px;
+}
+
+ul li{
+    font-size: 1rem;
+    margin:5px 0;
+    padding: 8px 40px;
+    border: 2px solid #495D7A;
+    border-radius: 15px;
+    color:#fff;
+
+}
+.quiz-header ul  li:hover{
+    background-color:orange;
+    color:#fff;
+}
+
+ul li label{
+    cursor: pointer;
+}
+button{
+    background: #4287f5;
+    width: 100px;
+    padding:10px;
+    font-size: 1.1rem;
+    color:#000;
+    border-radius: 10px;
+    font-family: inherit;
+    border:none;
+    font-weight: bold;
+    position: absolute;
+    top:80%;
+    right: 70px;
+
+
+}
+button:hover{
+    background-color:#f26601;
+}
+button:focus{
+    outline:0;
+    background:#ab210c ;
+}
+#stat{
+    position: absolute;
+    left:50px;
+    font-size: 18px;
+    color:black;
+    font-weight: bold;
+}
+
+.scoreboard #quiz{
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.scoreboard h2{
+    color:#fff;
+}
+.scoreboard button{
+    width: 200px;
+    padding:8px 15px;
+    background-color: orange;
+    border-radius: 8px;
+    position: absolute;
+    top:22%;
+    left:200px;
+
+}
+.scoreboard #check{
+    width: 200px;
+    padding: 8px 15px;
+    background-color: orange;
+    border-radius: 8px;
+    position: absolute;
+    top:35%;
+    left: 200px;
+}
+.answerbank h2{
+    display: none;
+    top:180px;
+    left:230px;
+    position: absolute;
+}
+.answerbank ol{
+    top:220px;
+    left:30px;
+    font-size: 18px;
+    color:#fff;
+    position: absolute;
+}

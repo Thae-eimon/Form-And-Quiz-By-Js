@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(
+        90deg,
+        #19647e 50%,
+        #28afb0 30%
+    );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+/* .container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    
+    /* opacity: 0; */
+    
+   
+/* } */
+
+.container{
+    width: 500px;
+    background:#fff;
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.5);
+    background-color:transparent;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 1s;
+}
+.container p{
+    text-align: center;
+    
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 10px ;
+}
+.icon{
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+.fab.fa-facebook{
+    color:#1390f0;
+}
+.fab.fa-google-plus{
+    color:red;
+}
+.fab.fa-twitter{
+    color: #1390f0;
+}
+.container #use{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin:10px;
+
+}
+.container .form-control{
+    width: 400px;
+    margin: 25px 40px;
+    position: relative;
+    
+}
+
+.form-control input{
+    display: block;
+    padding:15px;
+    width: 100%;
+    border-radius: 15px;
+    border: 0;
+    border-bottom: 2px solid #777;
+    background: transparent;
+    font-family: inherit;
+
+
+}
+.form-control input:focus{
+    outline: 0;
+    background: #f4f4f4;
+    border:2px solid #7fc1ff;
+    
+}
+.form-control label{
+    position: absolute;
+    left: 5px;
+    top:12px;
+
+}
+.form-control small{
+    visibility: hidden;
+}
+.form-control.success input{
+    border-bottom:2px solid cyan; 
+     /* background: #e8f0fe; */
+     /* background: transparent; */
+}
+.form-control.error input{
+    border:2px solid #D50C22;
+    border-radius: 15px;
+
+}
+.form-control.error  small{
+    visibility:visible;
+    color:#D50C22;
+    font-size: 17px;
+}
+.container .btn{
+    width: 200px;
+    padding: 10px;
+    background:#D50C22;
+    color:#fff;
+    border-radius: 15px;
+    font-size: 18px;
+    border:0;
+    margin-top: 5px;
+}
+.container .btn:hover{
+    background:#1390f0;
+}
+.container .btn:focus{
+    outline:0;
+}
+.container .btn:active{
+    transform: scale(0.95);
+}
+.container p{
+    margin: 30px;
+    text-align: center;
+
+}
+.container a{
+    color:aqua;
+    text-decoration: none;
+}
+.form-control label span{
+    font-size: 18px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.form-control input:focus + label span,.form-control input:valid + label span{
+    color:cyan;
+    transform: translateY(-35px);
+    
+}
+/* .form-control input:valid +label span{
+    
+    transform: translateY(-35px);
+    
+} */
+
+
+.container a:active + container{
+    transform: rotate(360deg);
+}
+
+
+*{
+    perspective: 1000px;
+}
+.container.rotate{
+    transform: rotateY(360deg);
+}
